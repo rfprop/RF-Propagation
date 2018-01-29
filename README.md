@@ -1,5 +1,6 @@
 # RF-Propagation
 A command line tool to predict RF propagation
+
 This tool has been developed to analyse point to point loss, line of sight coverage, and RF propagation coverage within the communications frequency range. It had to work well on a Windows 10 PC and utilise easily available elevation data.
 The application SPLAT! which has been around for a number of years, fulfils most of the requirements and has been compiled for Windows at various times. The source for this was easily available and offered with a GNU GPL, so was used as a starting point for the development.
 
