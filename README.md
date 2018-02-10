@@ -1,25 +1,11 @@
 # RF-Propagation
-A command line tool to predict RF propagation
 
-This tool has been developed to analyse point to point loss, line of sight coverage, and RF propagation coverage within the communications frequency range. It had to work well on a Windows 10 PC and utilise easily available elevation data.
-The application SPLAT! which has been around for a number of years, fulfils most of the requirements and has been compiled for Windows at various times. The source for this was easily available and offered with a GNU GPL, so was used as a starting point for the development.
+This repository holds a tool based on the code of SPLAT! by John Magliacane, KD2BD http://www.qsl.net/kd2bd/splat.html
+The source code came from https://github.com/jmcmellen/splat
 
-1. The latest code base was compared to a code base that had been compiled for Windows, and most of the changes pulled across. This produced a working tool with some limitations.
+The source has been signficantly modified and now has some significant differences from the original source.  As such it is incorrect to say that it is a variant of SPLAT! and is too different to be polite to make a pull request on the SPLAT! repository.
+I respect that the SPLAT! source code is provided under GNU GPL v2 and so it is correct that this derived source version is provided by to the public domain under the same licence.
 
-2. The program was profiled and a couple of functions that used more than expected CPU were made faster.
+This is still a development in progress.  The inputs and outputs are likely to change over time as they are slowly converted to the formats that are convenient to me.  
 
-3. The outer loop was modified to allow it to be split across multiple threads.  Most modern computers have multiple cores, so this significantly improves execution time.
-
-4. Routines were added to allow the saving of the output to .bmp files to make it compatible with more windows tools.
-
-Work to be completed.
-
-1. Improve the ease of loading terrain data.
-
-2. Move the .bmp writing code into a separate function, and reduce the huge amount of code repetition.
-
-3. Add in more propagation models
-
-4. Change the format of the reports, to provide the information in a more easily parsed manner. 
-
-
+I am not providing any garuntee or implication that the tool will meet any specific requirements and so I am am probably not going to be responsive to enquiries about its use or requests to add features.  
